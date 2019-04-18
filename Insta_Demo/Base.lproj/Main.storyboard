@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Swa-OA-U8i">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qee-VH-18i">
+            <objects>
+                <navigationController id="Swa-OA-U8i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="q0W-ha-oH6">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c6l-XH-W8o" kind="relationship" relationship="rootViewController" id="T1C-gR-8fO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGX-8f-dbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4126" y="-629"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5jm-CV-jTY">
+            <objects>
+                <tabBarController id="c6l-XH-W8o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Ycb-01-hea"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uAB-sy-WHi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="FsS-L6-2fa"/>
+                        <segue destination="Mlp-2M-WBm" kind="relationship" relationship="viewControllers" id="xqV-a4-Las"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EWB-GJ-ocL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3116" y="-627"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstVC" id="BYZ-38-t0r" customClass="FirstVC" customModule="Insta_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L3y-H2-30b">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ltd-Gg-KIx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="623"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ltd-Gg-KIx" secondAttribute="bottom" id="WHC-dH-92Q"/>
+                                    <constraint firstItem="ltd-Gg-KIx" firstAttribute="top" secondItem="L3y-H2-30b" secondAttribute="top" id="Wpw-8m-Hj1"/>
+                                    <constraint firstAttribute="trailing" secondItem="ltd-Gg-KIx" secondAttribute="trailing" id="mi1-b4-VzK"/>
+                                    <constraint firstItem="ltd-Gg-KIx" firstAttribute="leading" secondItem="L3y-H2-30b" secondAttribute="leading" id="wxc-3Z-Zad"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L3y-H2-30b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dea-NZ-5we"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L3y-H2-30b" secondAttribute="trailing" id="KxU-qy-CAU"/>
+                            <constraint firstItem="L3y-H2-30b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OdJ-2C-Yx8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L3y-H2-30b" secondAttribute="bottom" id="oce-ga-T70"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="qsw-qq-4J2"/>
+                    <connections>
+                        <outlet property="tblFizzBuzz" destination="ltd-Gg-KIx" id="eZS-bv-Of9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2078" y="-628"/>
+        </scene>
+        <!--Tap & Square-->
+        <scene sceneID="m2F-cy-WoX">
+            <objects>
+                <viewController storyboardIdentifier="TapVC" id="Mlp-2M-WBm" customClass="TapVC" customModule="Insta_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mxB-oa-SOn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2yF-4d-YsG">
+                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Rzv-nk-oxm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TapCell" id="8tk-nv-eZQ" customClass="TapCell" customModule="Insta_Demo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2yF-4d-YsG" firstAttribute="top" secondItem="Qgh-ZC-nxF" secondAttribute="top" id="1Pi-1J-2Bo"/>
+                            <constraint firstItem="Qgh-ZC-nxF" firstAttribute="trailing" secondItem="2yF-4d-YsG" secondAttribute="trailing" id="7QA-mD-Aye"/>
+                            <constraint firstItem="2yF-4d-YsG" firstAttribute="leading" secondItem="Qgh-ZC-nxF" secondAttribute="leading" id="CPh-bN-FVk"/>
+                            <constraint firstItem="Qgh-ZC-nxF" firstAttribute="bottom" secondItem="2yF-4d-YsG" secondAttribute="bottom" id="cv4-tg-19e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qgh-ZC-nxF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tap &amp; Square" id="eEL-ad-iRV"/>
+                    <connections>
+                        <outlet property="colTap" destination="2yF-4d-YsG" id="1uH-Eh-JIn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amc-ej-nb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2078" y="91"/>
+        </scene>
+    </scenes>
+</document>
